@@ -1,0 +1,7 @@
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\obj\Debug\auat.framework.csprojResolveAssemblyReference.cache
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\bin\Debug\auat.framework.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\bin\Debug\auat.framework.pdb
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\bin\Debug\WebDriver.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\bin\Debug\WebDriver.xml
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\obj\Debug\auat.framework.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\obj\Debug\auat.framework.pdb

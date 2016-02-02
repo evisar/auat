@@ -1,0 +1,14 @@
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\obj\Debug\sample.tests.csprojResolveAssemblyReference.cache
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\sample.tests.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\sample.tests.pdb
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\nunit.framework.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\nunit.framework.xml
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\obj\Debug\sample.tests.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\obj\Debug\sample.tests.pdb
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\WebDriver.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\WebDriver.xml
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\chromedriver.exe
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\auat.framework.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\auat.framework.pdb
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\sample.tests.dll.config
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\phantomjs.exe

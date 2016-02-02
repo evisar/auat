@@ -1,0 +1,5 @@
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample\bin\sample.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample\bin\sample.pdb
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample\obj\Debug\sample.csprojResolveAssemblyReference.cache
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample\obj\Debug\sample.dll
+C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample\obj\Debug\sample.pdb

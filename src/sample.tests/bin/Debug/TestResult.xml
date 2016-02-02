@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\sample.tests.dll" total="4" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-02-02" time="20:50:19">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\thomson\tools\NUnit-2.6.3\bin" machine-name="SKL-VISAR-ELMA1" user="Visar.Elmazi" user-domain="SEAVUS-CORP" />
+  <culture-info current-culture="en-US" current-uiculture="en-GB" />
+  <test-suite type="Assembly" name="C:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\bin\Debug\sample.tests.dll" executed="True" result="Failure" success="False" time="11.042" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="sample" executed="True" result="Failure" success="False" time="11.042" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="tests" executed="True" result="Failure" success="False" time="11.042" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="CalculatorTests" executed="True" result="Failure" success="False" time="11.041" asserts="0">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Calculator_Add_Test" executed="True" result="Success" success="True" time="2.695" asserts="0">
+                    <results>
+                      <test-case name="sample.tests.CalculatorTests.Calculator_Add_Test(3.1m,4.2m)" executed="True" result="Success" success="True" time="2.694" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Calculator_Divide_Test" executed="True" result="Failure" success="False" time="2.746" asserts="0">
+                    <results>
+                      <test-case name="sample.tests.CalculatorTests.Calculator_Divide_Test(111m,2.5m)" executed="True" result="Error" success="False" time="2.745" asserts="0">
+                        <failure>
+                          <message><![CDATA[OpenQA.Selenium.NoSuchElementException : {"errorMessage":"Unable to find element with xpath '//*[@value='/']'","request":{"headers":{"Accept":"application/json, image/png","Connection":"Close","Content-Length":"43","Content-Type":"application/json;charset=utf-8","Host":"localhost:37830"},"httpVersion":"1.1","method":"POST","post":"{\"using\":\"xpath\",\"value\":\"//*[@value='/']\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/2c75d910-c9e6-11e5-81ae-bdd140908861/element"}}]]></message>
+                          <stack-trace><![CDATA[at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+at OpenQA.Selenium.By.<>c__DisplayClasse.<XPath>b__c(ISearchContext context)
+at OpenQA.Selenium.By.FindElement(ISearchContext context)
+at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+at auat.framework.PageObject.FindElementBy(String query, FindBy findBy) in c:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\PageObject.cs:line 50
+at auat.framework.PageObject.get_Item(String elem) in c:\Users\visar.elmazi\Documents\GitHub\auat\src\auat.framework\PageObject.cs:line 64
+at sample.tests.CalculatorPage.Apply(Decimal a, Decimal b, String op) in c:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\CalculatorPage.cs:line 29
+at sample.tests.CalculatorPage.Divide(Decimal a, Decimal b) in c:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\CalculatorPage.cs:line 55
+at sample.tests.CalculatorTests.Calculator_Divide_Test(Decimal a, Decimal b) in c:\Users\visar.elmazi\Documents\GitHub\auat\src\sample.tests\CalculatorTests.cs:line 56
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Calculator_Multiply_Test" executed="True" result="Success" success="True" time="2.848" asserts="0">
+                    <results>
+                      <test-case name="sample.tests.CalculatorTests.Calculator_Multiply_Test(12.34m,35.56m)" executed="True" result="Success" success="True" time="2.847" asserts="0" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Calculator_Substract_Test" executed="True" result="Success" success="True" time="2.726" asserts="0">
+                    <results>
+                      <test-case name="sample.tests.CalculatorTests.Calculator_Substract_Test(10.1m,2.02m)" executed="True" result="Success" success="True" time="2.725" asserts="0" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
