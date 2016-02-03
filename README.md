@@ -6,7 +6,10 @@ Adding new features is easy. Making sure that you have not broken old features i
 But, automated UI testing is fragile? Yes, it is very fragile.
 And in this article I will propose a combination of tools and methods to make the maintainable. Let’s go.
 Let’s take a simple web calculator and create UI test automation cases for it, with these principles.
+
 Step 1: Take a feature, and extract an interface out of it, not a User Interface, but a software interface, a contract.
+
+![alt tag](map-ui-to-contract.PNG)
  
 So our calculator page supports typing decimal numbers, and applying operations on those numbers, and one of those operations is [+], adding 2 numbers and checking out the result on the top box.
 Let’s add couple of more operations:
