@@ -184,6 +184,8 @@ public class CalculatorPage : PageObject, sample.tests.ICalculatorPage
 
 Automated tests framework design and approach. (The code is much smaller than the diagram)
  
+![alt tag](auat.framework.design.PNG)
+ 
 We can run the tests. (you need to make sure that you have downloaded Selenium web driver nugget package, NUnit and NUnit adapter, or NUnit VS extension). Prepared configuration and make sure that your code is compiling and building successfully. If it does, 4 test cases should show up on the test explorer. 
  
 If you run them, a new browser should be spawned and apply the test cases.
