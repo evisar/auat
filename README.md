@@ -10,6 +10,8 @@ Step 1: Take a feature, and extract an interface out of it, not a User Interface
  
 So our calculator page supports typing decimal numbers, and applying operations on those numbers, and one of those operations is [+], adding 2 numbers and checking out the result on the top box.
 Let’s add couple of more operations:
+
+
     public interface ICalculatorPage
     {
         void Add(decimal a, decimal b);
@@ -18,7 +20,10 @@ Let’s add couple of more operations:
         void Divide(decimal a, decimal b);        
         decimal Result { get; }        
     }
+	
+	
 Now we have abstracted away the calculator page, the fact that it is a web application, which contains buttons and URL and a web browser involved, that we need to communicate with it. Let’s just go and write test cases for this interface.
+
 public class CalculatorTests
     {
         ICalculatorPage _calc = null;
@@ -51,6 +56,8 @@ public class CalculatorTests
             return _calc.Result;
         }
     }
+	
+	
 I am using NUnit here, because it provides much more flexibility in terms of creating more data driven and configurable test cases. Here I just created 4 test cases, if I wanted to test more scenarios, I just need to add them through the TestCase attribute.
 If we run these tests now, obviously they are all going to fail.
 Implement the ICalculatorPage!
@@ -65,6 +72,8 @@ Going through all the required elements (this is necessary, we don’t have to m
 By, represents an enum with DOM search methods:
 public enum FindBy { Name, Id, Value, Href, XPath };
 And value simply is a query, think of it as if you are making a jQuery search.
+
+
 <tests browser="OpenQA.Selenium.Chrome.ChromeDriver, WebDriver">
     <page type="sample.tests.CalculatorPage, sample.tests" url="http://localhost:32150/calculator.html">
       <element name="1" by="Value" value="1" />
@@ -88,13 +97,20 @@ And value simply is a query, think of it as if you are making a jQuery search.
       <element name="CE" by="Value" value="CE" />
     </page>
   </tests>
+  
+  
 This step is crucial! If we don’t do this step, we risk our tests being fragile because the risk that a control might disappear is low, but that it might change attributes, properties, identifiers is actually high, and this is what makes test automation so fragile, and hence the point of controlling this fragility.
+
 Now let’s create an abstract PageObject. What is a PageObject?
 It’s an abstraction of the feature under test to make interaction with it much more natural, decoupled and maintainable.
+
 http://martinfowler.com/bliki/PageObject.html
+
 So the Calculator Page Object will be a class inheriting from a base abstract PageObject and implementing the ICalculatorPage.  
 Our base PageObject will provide features to search controls by name and query them in the configuration and decouple the page from DEOM queries.
 Here what a part of the abstract page object looks like:
+
+
 private IWebElement FindElementBy(string query, FindBy findBy = FindBy.Name)
         {
             switch (findBy)
@@ -113,6 +129,7 @@ private IWebElement FindElementBy(string query, FindBy findBy = FindBy.Name)
                     throw new NotSupportedException();
             }
         }
+		
         public virtual IWebElement this[string elem]
         {
             get
@@ -126,7 +143,10 @@ private IWebElement FindElementBy(string query, FindBy findBy = FindBy.Name)
             }
         }
 
+		
 And then we inherit by creating an actual Calculator Page:
+
+
 public class CalculatorPage : PageObject, sample.tests.ICalculatorPage
     {
         public decimal Result
